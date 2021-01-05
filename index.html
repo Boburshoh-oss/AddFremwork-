@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Pepi WebSite</title>
+    <link rel="stylesheet" href="./bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="javaScript.js"></script>
+</head>
+<body>
+    <a href="balobatsettar">awdwd</a>
+    <a href="balobrsfeattar">awdwd</a>
+    <a href="balobatqequutar">awdwd</a>
+    <a href="balobatttrrhtrar">awdwd</a>
+    <section>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <form method="POST">
+                        {%csrf_token%}
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" id="name" class="from-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" name="value_1" placeholder="Your Weight" id="weight" class="from-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="number" name="value_2" placeholder="Your Height" id="height" class="from-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-success" onclick="return calc()">CALCULATE</input>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <div class="result">
+                        {% if s %}
+                        <span>Natija:{{s}}</span>
+                        {%endif%}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+</body>
+</html>
